@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name MDBT42Q)(type KiCad)(uri /Users/yusuke/Documents/noraled/Schematic/kicad-library/MDBT42Q)(options "")(descr ""))
+  (lib (name DigiKey)(type KiCad)(uri /Users/yusuke/Documents/noraled/Schematic/digikey-kicad-library/digikey-footprints.pretty)(options "")(descr ""))
+)

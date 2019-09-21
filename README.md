@@ -2,6 +2,12 @@
 
 [技術書典7 け27D](https://techbookfest.org/event/tbf07/circle/5663970140618752) にて頒布するBLE〜LEDブリッジ基板の製造データです。
 
+## 各種制御ソフトウェア
+
+- [M5Stack用](https://github.com/da-eee/CNoraBLE)
+- [FirebaseとEnebular](https://github.com/muramasa2764/ESP32Firebase-BLE)
+- [Web Bluetoothデモ](https://pokiiio.github.io/Jones/)
+
 ## 製造データ
 
 ### 回路図

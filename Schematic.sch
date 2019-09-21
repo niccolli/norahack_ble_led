@@ -80,8 +80,6 @@ $EndComp
 Wire Wire Line
 	4250 4200 4250 4050
 Wire Wire Line
-	5400 2050 4650 2050
-Wire Wire Line
 	5400 2150 4650 2150
 Wire Wire Line
 	5400 2250 4650 2250
@@ -544,7 +542,7 @@ Wire Wire Line
 	3050 6550 3050 6450
 Connection ~ 3050 6450
 Wire Wire Line
-	3050 6450 3800 6450
+	3050 6450 3500 6450
 Wire Wire Line
 	3800 6450 3800 6350
 $Comp
@@ -561,12 +559,12 @@ $EndComp
 $Comp
 L power:+3.3V #PWR0118
 U 1 1 5D57A274
-P 3800 6000
-F 0 "#PWR0118" H 3800 5850 50  0001 C CNN
-F 1 "+3.3V" H 3815 6173 50  0000 C CNN
-F 2 "" H 3800 6000 50  0001 C CNN
-F 3 "" H 3800 6000 50  0001 C CNN
-	1    3800 6000
+P 3800 5900
+F 0 "#PWR0118" H 3800 5750 50  0001 C CNN
+F 1 "+3.3V" H 3815 6073 50  0000 C CNN
+F 2 "" H 3800 5900 50  0001 C CNN
+F 3 "" H 3800 5900 50  0001 C CNN
+	1    3800 5900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -708,8 +706,7 @@ CS
 Text Label 3550 4450 3    50   ~ 0
 CLK
 Wire Wire Line
-	3350 6000 3800 6000
-Connection ~ 3800 6000
+	3350 6000 3500 6000
 $Comp
 L Regulator_Linear:APE8865NR-33-HF-3 U2
 U 1 1 5D626ACD
@@ -766,10 +763,129 @@ F 12 "Active" H 1950 7200 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1950 6000 2250 6000
+	1950 6000 2050 6000
 Connection ~ 2250 6000
 Wire Wire Line
 	1650 6000 1350 6000
 Wire Wire Line
 	1350 6100 2000 6100
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5D697A64
+P 5400 2050
+F 0 "TP4" V 5400 2238 50  0000 L CNN
+F 1 "TestPoint" V 5445 2238 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5600 2050 50  0001 C CNN
+F 3 "~" H 5600 2050 50  0001 C CNN
+	1    5400 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 2050 4650 2050
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5D69C3EA
+P 5400 2150
+F 0 "TP5" V 5400 2338 50  0000 L CNN
+F 1 "TestPoint" V 5445 2338 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5600 2150 50  0001 C CNN
+F 3 "~" H 5600 2150 50  0001 C CNN
+	1    5400 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5D69E66E
+P 5400 2250
+F 0 "TP6" V 5400 2438 50  0000 L CNN
+F 1 "TestPoint" V 5445 2438 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5600 2250 50  0001 C CNN
+F 3 "~" H 5600 2250 50  0001 C CNN
+	1    5400 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5D6A08B9
+P 5400 2450
+F 0 "TP7" V 5400 2638 50  0000 L CNN
+F 1 "TestPoint" V 5445 2638 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5600 2450 50  0001 C CNN
+F 3 "~" H 5600 2450 50  0001 C CNN
+	1    5400 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5D6A29FA
+P 5400 2550
+F 0 "TP8" V 5400 2738 50  0000 L CNN
+F 1 "TestPoint" V 5445 2738 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5600 2550 50  0001 C CNN
+F 3 "~" H 5600 2550 50  0001 C CNN
+	1    5400 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP9
+U 1 1 5D6A4C7E
+P 5400 2650
+F 0 "TP9" V 5400 2838 50  0000 L CNN
+F 1 "TestPoint" V 5445 2838 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5600 2650 50  0001 C CNN
+F 3 "~" H 5600 2650 50  0001 C CNN
+	1    5400 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5D6A7498
+P 3500 5950
+F 0 "TP2" H 3425 6170 50  0000 L CNN
+F 1 "TestPoint" V 3545 6138 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 3700 5950 50  0001 C CNN
+F 3 "~" H 3700 5950 50  0001 C CNN
+	1    3500 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5D6AA1A3
+P 2050 5950
+F 0 "TP1" H 1969 6171 50  0000 L CNN
+F 1 "TestPoint" V 2095 6138 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 2250 5950 50  0001 C CNN
+F 3 "~" H 2250 5950 50  0001 C CNN
+	1    2050 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5D6AD4E4
+P 3500 6500
+F 0 "TP3" H 3442 6572 50  0000 R CNN
+F 1 "TestPoint" V 3545 6688 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 3700 6500 50  0001 C CNN
+F 3 "~" H 3700 6500 50  0001 C CNN
+	1    3500 6500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2050 5950 2050 6000
+Connection ~ 2050 6000
+Wire Wire Line
+	2050 6000 2250 6000
+Wire Wire Line
+	3500 5950 3500 6000
+Connection ~ 3500 6000
+Wire Wire Line
+	3500 6000 3800 6000
+Wire Wire Line
+	3800 6000 3800 5900
+Connection ~ 3800 6000
+Wire Wire Line
+	3500 6500 3500 6450
+Connection ~ 3500 6450
+Wire Wire Line
+	3500 6450 3800 6450
 $EndSCHEMATC
